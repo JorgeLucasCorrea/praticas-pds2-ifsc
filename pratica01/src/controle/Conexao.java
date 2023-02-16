@@ -8,15 +8,15 @@ public class Conexao {
 	
 	private static Connection conexao;
 	private static Conexao instancia;
-	private static final String DATABASE = "hr";
-	private static final String USER = "aluno";
+	private static final String DATABASE = "jorge";
+	private static final String USER = "root";
 	private static final String PSW = "aluno";
 	
 	private Conexao() {
 		
 	}
 	
-	public Conexao getInstancia() {
+	public static Conexao getInstancia() {
 		if(instancia == null ) {
 			instancia = new Conexao();
 		}
@@ -24,7 +24,7 @@ public class Conexao {
 		return instancia;
 	}
 	
-	public static Connection conectar() {
+	public  Connection conectar() {
 		
 		try {
 			conexao = DriverManager.getConnection("jdbc:mysql://localhost/" + DATABASE + "?serverTimezone=UTC", USER, PSW);
@@ -36,7 +36,7 @@ public class Conexao {
 		return conexao;
 	}
 	
-	public static boolean fecharConexao() {
+	public  boolean fecharConexao() {
 		
 		
 		try {
