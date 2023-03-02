@@ -1,0 +1,9 @@
+Lista1
+
+1) Biblioteca é um conjunto de códigos de computador que coleciona diversas funcionalidades anteriormente planejadas por programadores.
+"API" é utilizado para receber informações de sites de maneira pública ou privada.
+
+2) Defina e explique a razão para usar:
+MVC:É um padrão de ordenação durante a programação. Começa pelo usuário utilizando a camada visão, o controle envia estes dados para o modelo que analisa-os e destina a resolução. É utilizado para filtração por conta da camada controle, facilidade de entendimento do padrão, de alteração e de trabalho com múltiplos programadores.
+DAO:
+Singleton:
